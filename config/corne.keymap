@@ -176,7 +176,7 @@
 &none  &kp Q        &kp W             &kp E             &kp R                   &kp T               &kp Y            &kp U      &kp I      &kp O    &kp P      &none
 &none  &kp A        &kp S             &kp D             &kp F                   &kp G               &kp H            &kp J      &kp K      &kp L    &kp MINUS  &none
 &none  &hm LCTRL Z  &hm LEFT_SHIFT X  &hm LEFT_ALT C    &kp V                   &kp B               &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH   &none
-                                      &lt 1 LANGUAGE_2  &hm LEFT_COMMAND SPACE  &lt 2 LANGUAGE_1    &lt 3 BACKSPACE  &kp ENTER  &none
+                                      &lt 1 LANGUAGE_2  &hm LEFT_COMMAND SPACE  &lt 0 LANGUAGE_1    &lt 2 BACKSPACE  &kp ENTER  &none
             >;
         };
 
@@ -190,42 +190,25 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp LC(ESC)  &none      &none     &none             &none        &kp N6    &kp N7    &kp N8        &kp N9           &kp N0  &trans
-&trans  &kp LCTRL    &kp LSHFT  &kp LALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &none   &trans
-&trans  &none        &none      &none     &none             &kp TAB      &kp LBKT  &kp RBKT  &none         &none            &none   &trans
-                                &trans    &trans            &trans       &trans    &trans    &trans
+&trans  &kp LC(ESC)  &none      &none     &none             &none        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none  &trans
+&trans  &kp LCTRL    &kp LSHFT  &kp LALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none  &trans
+&trans  &none        &none      &none     &none             &kp TAB      &kp LBKT  &kp RBKT       &none         &none            &none  &trans
+                                &trans    &trans            &trans       &trans    &trans         &none
             >;
         };
 
-        SYM {
-            display-name = "Sym";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&trans  &kp EXCL  &kp AT          &kp HASH           &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
-&trans  &trans    &trans          &hm LALT UP_ARROW  &hm LCTRL SQT    &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
-&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
-                                  &kp LGUI           &trans           &kp SPACE    &kp RET    &trans           &trans
-            >;
-        };
-
-        ADJ {
-            display-name = "System";
+        MS {
+            display-name = "Mouse";
             bindings = <
 &trans  &none         &none         &none         &none       &mkp MB1    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp C_VOLUME_UP    &trans
 &trans  &trans        &trans        &trans        &trans      &trans      &none           &mkp MB1        &mkp MB2      &mkp MB3         &kp C_VOLUME_DOWN  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none              &trans
-                                    &trans        &trans      &trans      &trans          &trans          &trans
+                                    &trans        &trans      &trans      &trans          &trans          &none
             >;
         };
 
-        EXTRA {
-            display-name = "Mouse";
+        NUM {
+            display-name = "Number";
             bindings = <
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7          &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0  &none
 &none  &trans        &trans        &trans        &trans        &trans          &kp EQUAL         &kp NON_US_BACKSLASH  &kp LS(GRAVE)  &kp SEMICOLON  &kp SQT       &none
@@ -240,7 +223,7 @@
 
         l3 {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <2>;
         };
     };
 };
