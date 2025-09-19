@@ -12,13 +12,13 @@
 //testing mouse movement and scroll binds...
 
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <100>;
     flavor = "tap-unless-interrupted";
     hold-while-undecided;
     hold-while-undecided-linger;
     retro-tap;
     quick-tap-ms = <50>;
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <100>;
 };
 
 &lt {
