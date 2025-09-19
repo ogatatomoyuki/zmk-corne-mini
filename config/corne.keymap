@@ -12,11 +12,12 @@
 //testing mouse movement and scroll binds...
 
 &mt {
-    flavor = "hold-preferred";
+    flavor = "balanced";
     hold-while-undecided-linger;
     retro-tap;
     quick-tap-ms = <(-1)>;
     require-prior-idle-ms = <(-1)>;
+    tapping-term-ms = <140>;
 };
 
 &lt {
