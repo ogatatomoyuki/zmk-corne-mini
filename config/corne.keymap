@@ -13,13 +13,11 @@
 
 &mt {
     tapping-term-ms = <100>;
-    flavor = "tap-unless-interrupted";
-    hold-while-undecided;
+    flavor = "tap-preferred";
     hold-while-undecided-linger;
     retro-tap;
-    quick-tap-ms = <50>;
-    require-prior-idle-ms = <100>;
-    hold-trigger-on-release;
+    quick-tap-ms = <(-1)>;
+    require-prior-idle-ms = <(-1)>;
 };
 
 &lt {
