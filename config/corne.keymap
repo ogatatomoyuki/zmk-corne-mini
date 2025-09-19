@@ -12,48 +12,6 @@
 //testing mouse movement and scroll binds...
 
 / {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        para: para {
-            compatible = "zmk,behavior-tap-dance";
-            label = "PARA";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-        };
-
-        caps: caps {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS";
-            #binding-cells = <0>;
-            continue-list = <MINUS BACKSPACE>;
-        };
-
-        paraless: paraless {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARALESS";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        paragreat: paragreat {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARAGREAT";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-    };
-
     combos { compatible = "zmk,combos"; };
 
     //
@@ -71,10 +29,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp Q        &kp W             &kp E             &kp R                   &kp T               &kp Y            &kp U      &kp I      &kp O    &kp P      &none
-&none  &kp A        &kp S             &kp D             &kp F                   &kp G               &kp H            &kp J      &kp K      &kp L    &kp MINUS  &none
-&none  &hm LCTRL Z  &hm LEFT_SHIFT X  &hm LEFT_ALT C    &kp V                   &kp B               &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH   &none
-                                      &lt 1 LANGUAGE_2  &hm LEFT_COMMAND SPACE  &lt 0 LANGUAGE_1    &lt 2 BACKSPACE  &kp ENTER  &none
+&none  &kp Q  &kp W  &kp E             &kp R  &kp T               &kp Y            &kp U      &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F  &kp G               &kp H            &kp J      &kp K      &kp L    &kp MINUS  &none
+&none  &none  &none  &none             &kp V  &kp B               &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH   &none
+                     &lt 1 LANGUAGE_2  &none  &lt 0 LANGUAGE_1    &lt 2 BACKSPACE  &kp ENTER  &none
             >;
         };
 
