@@ -12,7 +12,6 @@
 //testing mouse movement and scroll binds...
 
 &mt {
-    tapping-term-ms = <100>;
     flavor = "tap-preferred";
     hold-while-undecided-linger;
     retro-tap;
