@@ -59,104 +59,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
-        };
-
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-        };
-
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <28 27>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 20>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
-        };
-
-        leftbrack {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
-        };
-
-        rightbrack {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 32>;
-        };
-
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <20 19>;
-        };
-
-        para-great {
-            bindings = <&paragreat>;
-            key-positions = <20 21>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     //
 
@@ -218,12 +121,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        l3 {
-            if-layers = <1 2>;
-            then-layer = <2>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
