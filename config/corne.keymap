@@ -62,10 +62,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp LC(ESC)  &none      &none     &none             &none        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none  &none
-&trans  &kp LCTRL    &kp LSHFT  &kp LALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
-&trans  &none        &none      &none     &none             &kp TAB      &kp LBKT  &kp RBKT       &none         &none            &none  &none
-                                &trans    &trans            &trans       &trans    &trans         &none
+&trans  &kp LC(ESCAPE)  &none      &none     &none             &none        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none  &none
+&trans  &kp LCTRL       &kp LSHFT  &kp LALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&trans  &none           &none      &none     &none             &kp TAB      &kp LBKT  &kp RBKT       &none         &none            &none  &none
+                                   &trans    &trans            &trans       &trans    &trans         &none
             >;
         };
 
