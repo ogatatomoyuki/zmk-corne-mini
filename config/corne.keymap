@@ -11,26 +11,28 @@
 
 //testing mouse movement and scroll binds...
 
+&mt {
+    tapping-term-ms = <150>;
+    flavor = "tap-unless-interrupted";
+    hold-while-undecided;
+    hold-while-undecided-linger;
+    retro-tap;
+    quick-tap-ms = <120>;
+};
+
+&lt {
+    tapping-term-ms = <150>;
+    quick-tap-ms = <120>;
+    flavor = "tap-unless-interrupted";
+    hold-while-undecided;
+    hold-while-undecided-linger;
+    retro-tap;
+};
+
 / {
     combos { compatible = "zmk,combos"; };
 
     //
-
-    behaviors {
-        hm: hm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
-            flavor = "tap-preferred";
-            hold-while-undecided;
-            retro-tap;
-            hold-while-undecided-linger;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -62,10 +64,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp LC(ESCAPE)  &none      &none     &none             &none        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none  &none
-&trans  &kp LCTRL       &kp LSHFT  &kp LALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
-&trans  &none           &none      &none     &none             &kp TAB      &kp LBKT  &kp RBKT       &none         &none            &none  &none
-                                   &trans    &trans            &trans       &trans    &trans         &none
+&trans  &gresc     &none      &none     &none             &none        &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END          &none  &none
+&trans  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&trans  &none      &none      &none     &none             &kp TAB      &kp LBKT  &kp RBKT       &none         &none            &none  &none
+                              &trans    &trans            &trans       &trans    &trans         &none
             >;
         };
 
