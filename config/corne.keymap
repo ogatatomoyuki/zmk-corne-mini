@@ -13,16 +13,20 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <280>;
-    require-prior-idle-ms = <40>;
-    tapping-term-ms = <250>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <0>;
+    tapping-term-ms = <300>;
+    hold-trigger-on-release;
+    retro-tap;
 };
 
 &lt {
-    tapping-term-ms = <250>;
-    quick-tap-ms = <280>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <200>;
     flavor = "tap-preferred";
-    require-prior-idle-ms = <40>;
+    require-prior-idle-ms = <0>;
+    retro-tap;
+    hold-trigger-on-release;
 };
 
 / {
