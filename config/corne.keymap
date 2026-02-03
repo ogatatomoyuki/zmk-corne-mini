@@ -17,23 +17,17 @@
 #define JP_MHEN LANGUAGE_2  // 無変換
 #define JP_HENK LANGUAGE_1  // 変換
 
-// Behavior settings from previous working config
+// Simplified behavior settings for reliable tap response
 &mt {
-    flavor = "tap-preferred";
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <0>;
-    tapping-term-ms = <300>;
-    hold-trigger-on-release;
-    retro-tap;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
 };
 
 &lt {
-    tapping-term-ms = <300>;
-    quick-tap-ms = <200>;
-    flavor = "tap-preferred";
-    require-prior-idle-ms = <0>;
-    retro-tap;
-    hold-trigger-on-release;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
 };
 
 / {
