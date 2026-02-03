@@ -50,7 +50,7 @@
 &none  &kp Q        &kp W        &kp E         &kp R             &kp T              &kp Y         &kp U          &kp I      &kp O    &kp P      &none
 &none  &kp A        &kp S        &kp D         &kp F             &kp G              &kp H         &kp J          &kp K      &kp L    &kp MINUS  &none
 &none  &mt LCTRL Z  &mt LSHFT X  &mt LALT C    &kp V             &kp B              &kp N         &kp M          &kp COMMA  &kp DOT  &kp FSLH   &none
-                                 &thm LSHFT A  &thm LCTRL B  &thm LALT C   &thm RSHFT D  &thm RCTRL E  &none
+                                 &mo NAV  &kp SPACE  &mo SYM   &kp BSPC  &kp RET  &none
             >;
         };
 
