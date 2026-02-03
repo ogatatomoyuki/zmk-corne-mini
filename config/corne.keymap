@@ -17,16 +17,6 @@
 #define JP_MHEN LANGUAGE_2  // 無変換
 #define JP_HENK LANGUAGE_1  // 変換
 
-// Tap-hold settings
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-};
-
-&lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-};
 
 / {
     keymap {
@@ -49,7 +39,7 @@
 &none  &kp Q        &kp W        &kp E         &kp R             &kp T              &kp Y         &kp U          &kp I      &kp O    &kp P      &none
 &none  &kp A        &kp S        &kp D         &kp F             &kp G              &kp H         &kp J          &kp K      &kp L    &kp MINUS  &none
 &none  &mt LCTRL Z  &mt LSHFT X  &mt LALT C    &kp V             &kp B              &kp N         &kp M          &kp COMMA  &kp DOT  &kp FSLH   &none
-                                 &kp A  &kp B  &kp C   &kp D  &kp E  &none
+                                 &lt NAV JP_MHEN  &mt LCMD SPACE  &lt SYM JP_HENK   &lt NUM BSPC  &mt RSHFT RET  &none
             >;
         };
 
