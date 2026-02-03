@@ -17,17 +17,15 @@
 #define JP_MHEN LANGUAGE_2  // 無変換
 #define JP_HENK LANGUAGE_1  // 変換
 
-// Simplified behavior settings for reliable tap response
+// Tap-hold settings
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    quick-tap-ms = <150>;
 };
 
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    quick-tap-ms = <150>;
 };
 
 / {
