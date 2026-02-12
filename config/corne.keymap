@@ -17,8 +17,8 @@
         lth: layer_tap_hold {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <350>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <100>;
             retro-tap;
@@ -27,8 +27,8 @@
         mth: mod_tap_hold {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <350>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <100>;
             retro-tap;
