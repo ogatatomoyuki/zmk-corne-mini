@@ -1,0 +1,12 @@
+file_format: "1"
+id: corne_custom
+name: Corne Custom
+type: shield
+url: https://github.com/foostan/crkbd
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - corne_custom_left
+  - corne_custom_right

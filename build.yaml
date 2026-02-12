@@ -1,14 +1,9 @@
-# Build configuration for ZMK Corne Mini
-# Pinned to ZMK v0.3.0 for compatibility with nice_nano_v2 board
+# Build configuration for ZMK Corne Mini Custom Shield
 ---
 include:
   - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
+    shield: corne_custom_left
   - board: nice_nano_v2
-    shield: corne_left
-  - board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: corne_right
+    shield: corne_custom_right
   - board: nice_nano_v2
     shield: settings_reset
