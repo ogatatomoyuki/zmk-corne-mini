@@ -17,19 +17,21 @@
         lth: layer_tap_hold {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <100>;
+            retro-tap;
             bindings = <&mo>, <&kp>;
         };
         mth: mod_tap_hold {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <100>;
+            retro-tap;
             bindings = <&kp>, <&kp>;
         };
     };
