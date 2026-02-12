@@ -12,18 +12,6 @@
 #define SYM 2
 #define NUM 3
 
-&lt {
-    tapping-term-ms = <350>;
-    flavor = "tap-preferred";
-    retro-tap;
-};
-
-&mt {
-    tapping-term-ms = <350>;
-    flavor = "tap-preferred";
-    retro-tap;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
