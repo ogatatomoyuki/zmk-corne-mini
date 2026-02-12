@@ -13,13 +13,15 @@
 #define NUM 3
 
 &lt {
-    tapping-term-ms = <150>;
-    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
+    retro-tap;
 };
 
 &mt {
-    tapping-term-ms = <150>;
-    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
+    retro-tap;
 };
 
 / {
