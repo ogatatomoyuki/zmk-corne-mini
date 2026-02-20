@@ -5,6 +5,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
@@ -25,6 +26,16 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_tmux_prefix {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LC(B)>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,10 +50,10 @@
 
         NAV {
             bindings = <
-&none  &kp ESC    &none      &none     &none     &kp F4       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp DEL    &none
-&none  &kp TAB    &none      &none     &none     &kp SPACE    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SQT    &none
-&none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LCMD  &kp TAB      &kp LBKT  &kp RBKT   &kp SEMI   &kp BSLH   &kp GRAVE  &none
-                             &trans    &trans    &trans       &trans    &trans     &none
+&none  &kp ESC    &none      &none     &none     &kp F4       &kp HOME      &kp PG_DN     &kp PG_UP      &kp END        &mkp LCLK  &none
+&none  &kp TAB    &none      &none     &none     &kp SPACE    &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT      &mkp RCLK  &none
+&none  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LCMD  &kp TAB      &msc SCRL_DOWN &msc SCRL_UP &kp LG(EQUAL)  &kp LG(MINUS)  &mkp MCLK  &none
+                             &trans    &trans    &trans       &trans        &trans        &none
             >;
         };
 
